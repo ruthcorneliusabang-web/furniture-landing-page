@@ -1,0 +1,480 @@
+body {
+    background-color: darkolivegreen;
+
+}
+header {
+    background-image: url('Pictures/brown.jpg - Copy.jpg');
+    background-size: 100%;
+    margin: 0px;
+    padding: 20px;
+    width: 100%;
+    object-fit: cover;
+}
+h1 {
+    color: darkolivegreen;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'palatino linotype', 'book antiqua', palatino, serif;
+    font-weight: bold;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+
+}
+nav a {
+    color: darkgreen;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'palatino linotype', 'book antiqua', palatino, serif;
+    font-weight: bold;
+}
+nav a:hover {
+    background-color: green;
+    color: white;
+}
+h2 {
+    color: White;
+    font-family: 'palatino linotype', 'book antiqua', palatino, serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+#home-page p {
+    color: white;
+    font-family: 'palatino linotype', 'book antiqua', palatino, serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 15px;
+    font-style: italic;
+    flex-direction: row;
+}
+#home-page img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+#about h2 {
+    color: white;
+    font-family: 'palatino linotype', 'book antiqua', palatino, serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.about-content {
+    width: 100%;
+    height: 300px;
+    background-image: url('Pictures/morden.jpg.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.about-content p {
+    color: darkolivegreen;
+    font-family: 'palatino linotype', 'book antiqua', palatino, serif;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    color: white;
+    font-family: 'palatino linotype', 'book antiqua', palatino, serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+div p{
+    font-size: 25px;
+    text-align: center;
+    font-style: oblique;
+    color: white;
+}
+h4 {
+    color: white;
+    font-family: 'palatino linotype', 'book antiqua', palatino, serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    padding: 10px;
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-content a {
+    color: darkgreen;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 0;
+}
+.product-card {
+    display: flex;
+    gap: 20px;
+}
+.product-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+}
+.product-card img {
+    width: 500px;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 40px;
+    box-shadow: 0px 0px 15px rgba(90, 81, 2, 0.986);
+    padding: 10px;
+    margin: 15px;
+    transition: transform 0.5s ease;
+}
+.slide-out {
+    transform: translateX(-100%);
+}
+h3 {
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-info p {
+    font-size: 15px;
+    color: white;
+}
+.sofa-page {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    perspective: 1000px;
+    position: relative;
+    flex-shrink: 0;
+    display: block;
+
+}
+.sofa-page img {
+width: 100%;
+height: 100%;
+object-fit: fill;
+transform-origin: left center;
+transform-style: preserve-3d;
+backface-visibility: hidden;
+transition: transform 0.6s ease;
+position: absolute;
+top: 0;
+left: 0;
+margin: 0;
+padding: 0;
+z-index: 1;
+}
+.sofa-page img.flip {
+    transform: rotateY(180deg);
+}
+#next-sofa-image {
+    pointer-events: none;
+    z-index: 0;
+}
+.bed-page {
+    width: 600px;
+    height: 300px;
+    perspective: 1000px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    display: block;
+
+
+}
+.bed-page img {
+    width: 100%;
+    height: 100%;
+    transform-origin: left center;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease;
+    position: absolute;
+    margin: 0px;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.bed-page img.flip {
+    transform: rotateY(180deg);
+}
+#next-bed-image {
+    pointer-events: none;
+    z-index: 0;
+}
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.table-page img {
+    width: 100%;
+    height: 100%;
+    transform-origin: left center;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease;
+    position: absolute;
+    margin: 0px;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.table-page img.flip {
+    transform: rotateY(180deg);
+}
+#next-table-image {
+    pointer-events: none;
+    z-index: 0;
+}
+.table-page {
+    width: 600px;
+    height: 300px;
+    perspective: 1000px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    display: block;
+}
+.chair-page img {
+    width: 100%;
+    height: 100%;
+    transform-origin: left center;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease;
+    position: absolute;
+    margin: 0px;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.chair-page {
+    width: 600px;
+    height: 300px;
+    perspective: 1000px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    display: block;
+}
+.chair-page img.flip {
+    transform: rotateY(180deg);
+}
+#next-chair-image {
+    pointer-events: none;
+    z-index: 0;
+}
+.home-image img {
+    width: 100%;
+    height: 100%;
+    transform-origin: left center;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease;
+    position: absolute;
+    margin: 0px;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.home-image {
+    width: 600px;
+    height: 300px;
+    perspective: 1000px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    display: block;
+}
+.home-image img.flip {
+    transform: rotateY(180deg);
+}
+#next-home-image {
+    pointer-events: none;
+    z-index: 0;
+}
+.designer-card {
+    position: relative;
+    width: 600px;
+    margin: auto;
+}
+.furniture-image {
+    position: absolute;
+    z-index: -1;
+    filter: blur(1px);
+    top: 5px;
+    left: -10px;
+    width: 300px;
+}
+.designer-image {
+    border-radius: 50%;
+    width: 250px;
+    height: 220px;
+    object-fit: cover;
+    margin: 20px;
+}
+#stephen {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 25px;
+}
+#meet {
+    font-size: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+#designer-image {
+    border-radius: 50%;
+    width: 250px;
+    height: 220px;
+    object-fit: fill;
+    margin: 20px;
+    padding: 10px;
+}
+.fixed-button {
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: help;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: darkgreen;
+    color: white;
+}
+#contact-page {
+    font-size: 30px;
+    margin: 0;
+    padding: 15px;
+    background-color: lightgreen;
+    color: darkgreen;
+    text-align: center;
+}
+.get-page {
+    line-height: 1.5;
+    margin: 30px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+
+}
+#contact {
+    padding: 50px 20px;
+}
+#get {
+    font-size: 20px;
+    color: lightgreen;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: flex-start;
+}
+input {
+    padding: 10px;
+    width: 100%;
+
+}
+label {
+    font-weight: bold;
+}
+#contact > div {
+    width: 50%;
+}
+.get-page p {
+    font-size: 14px;
+    margin: 0 0 15px 0;
+}
+.contact-content{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+}
+#contact-page, #contact > p {
+    width: 100%;
+}
+.contact-content > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+}
+.contact-content > div h3,
+.contact-content > div h4 {
+    margin-top: 0;
+}
+button {
+    padding: 12px;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    color: white;
+    background-color: blue;
+}
+form textarea {
+    padding: 10px;
+    width: 100%;
+    min-height: 150px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
